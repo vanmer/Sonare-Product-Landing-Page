@@ -11,6 +11,7 @@
     --fifth-color: #fff;
     --sixth-color: rgb(200, 200, 200);
     --seventh-color: rgb(160, 160, 160);
+    --eightth-color: #e63946;
 }
 
 * {
@@ -153,13 +154,11 @@ img {
     font-family: 'Barlow Semi Condensed', sans-serif;
     display: inline;
     background-color: var(--fourth-color);
-    /* background-color: rgb(22,22,22); */
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1;
     box-shadow: 7px 0 0 var(--fourth-color), -7px 0 0 var(--fourth-color);
-    /* box-shadow: 7px 0 0 #161616, -7px 0 0 #161616; */
 }
 
 .product-specs {
@@ -210,9 +209,27 @@ img {
   background-color: var(--fourth-color);
 }
 
-.red:hover {
-
+.btn-red {
+cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  border: 2px solid var(--fourth-color);
+  border-radius: 27px;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.625rem 2rem;
+  margin: 1rem 0;
+  color: var(--fourth-color);
+  background-color: var(--fifth-color);
 }
+
+.btn-red:hover {
+  color: var(--fifth-color);
+  background-color: var(--eightth-color);
+  border-color: var(--eightth-color);
+}
+
 
 /*----------------------------------------------------------------------------*/
 /*-------------------------------- Newsletter --------------------------------*/
@@ -248,6 +265,7 @@ fieldset {
 
 legend {
     padding: 1rem 0;
+    margin: 0 auto;
     color: var(--seventh-color);
     max-width: 450px;
 }
@@ -259,6 +277,10 @@ legend {
     padding: 0.9rem 3rem 1rem 2rem;
     margin: 1rem auto;
 }
+
+/*----------------------------------------------------------------------------*/
+/*-------------------------------- Checkboxes --------------------------------*/
+/*----------------------------------------------------------------------------*/
 
 .checkboxes {
     display: flex;
@@ -312,7 +334,7 @@ textarea:focus, input:focus {
 }
 
 .big-checkbox:checked {
-	background-color: #e9ecee;
+	background-color: var(--primary-color);
 	border: 1px solid #adb8c0;
 	color: #99a1a7;
 }
