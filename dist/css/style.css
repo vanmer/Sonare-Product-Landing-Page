@@ -10,6 +10,7 @@
     --fourth-color: rgb(40,40,40);
     --fifth-color: #fff;
     --sixth-color: rgb(200, 200, 200);
+    --seventh-color: rgb(160, 160, 160);
 }
 
 * {
@@ -105,14 +106,16 @@ img {
 
 .product-section {
     border-bottom: 1px solid var(--sixth-color);
+    padding-bottom: 2rem;
 }
 
 .product-section .product-heading {
     font-size: 6rem;
     text-align: center;
-    line-height: 0.8;
+    line-height: 0.9;
     padding: 5rem 0 2rem 0;
     color: var(--fourth-color);
+    text-transform: uppercase;
 }
 
 .product-card {
@@ -135,7 +138,7 @@ img {
 .product-img img {
     height: auto; 
     width: auto; 
-    max-width: 600px; 
+    max-width: 480px; 
     max-height: 400px;
 }
 
@@ -213,4 +216,96 @@ img {
 
 .newsletter {
     display: flex;
+    width: 100%;
+}
+
+.newsletter-card {
+    justify-self: center;
+    width: 85%;
+    padding: 7rem;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid var(--sixth-color);
+}
+
+.newsletter-head {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.newsletter-subhead {
+    font-size: 1.4rem;
+    margin-top: -0.5rem;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    padding: 1rem 0;
+    color: var(--seventh-color);
+    max-width: 450px;
+}
+
+#suscribe {
+    width: 55%;
+    border: 2px solid var(--sixth-color);
+    border-radius: 27px;
+    padding: 0.9rem 3rem 1rem 2rem;
+    margin: 0.5rem auto;
+}
+
+input[type="text"] {
+    font-size: 0.9rem;
+    font-weight: 500;
+    ;
+}
+
+input, select, textarea{
+    color: var(--fourth-color);
+}
+
+textarea:focus, input:focus {
+    color: var(--fourth-color);
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------- Links ----------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+.links {
+    display: grid;
+    font-size: 0.9rem;
+    padding: 3rem 0;
+    width: 100%;
+  }
+  
+.links-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    justify-self: center;
+    max-width: 1100px;
+    padding: 0 1.25rem;
+}
+
+.links-inner ul {
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+  
+.links-inner ul li a {
+    line-height: 2.8;
+    color: var(--seventh-color);
+    letter-spacing: 0.03rem;
+}
+
+.links-inner ul li h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    color: var(--primary-color);
 }
