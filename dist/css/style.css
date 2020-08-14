@@ -368,8 +368,6 @@ textarea:focus, input:focus {
 	color: #99a1a7;
 }
 
-
-
 /*----------------------------------------------------------------------------*/
 /*----------------------------------- Links ----------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -569,7 +567,7 @@ footer {
     .product-info {
         justify-self: flex-start;
         width: 80%;
-        padding-left: 6rem;
+        padding-left: 2rem;
     }
     .product-info .text-block p {
         font-size: 1.8rem;
