@@ -42,6 +42,7 @@ ul {
 
 img {
     width: 100%;
+    object-fit: cover;
 }
 
 .wrapper {
@@ -556,7 +557,7 @@ footer {
         overflow-x: hidden;
       }
       body {
-        position: relative
+        position: relative;
       }
     .social-media-mobile {
         padding: 1.6rem 1rem;
